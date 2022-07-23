@@ -63,3 +63,9 @@ class CropImage:
                           left_top_x: right_bottom_x+1]
             dst_img = cv2.resize(img, (out_w, out_h))
         return dst_img
+    
+if __name__ == "__main__":
+    cropper = CropImage()
+    dummy_image = np.zeros(640,480,3)
+    box = [112,112,64,128]
+    new_box = cropper
